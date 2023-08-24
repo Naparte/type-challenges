@@ -11,12 +11,12 @@ interface Todo4 {
     title: string
     description: string
     completed: boolean
-    test: never
+    // test: never
 }
 
 type TodoPreview4 = MyOmit<Todo4, 'description' | 'title'>
 
 const todo: TodoPreview4 = {
     completed: false,
-    test: false as never
+    // test: false as never
 }
