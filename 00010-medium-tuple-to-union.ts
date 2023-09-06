@@ -5,7 +5,7 @@ type TupleToUnion<T extends readonly any[]> = keyof {
     [key in T[number]]: key
 }
 
-type MyTupleToUnion<T extends readonly any[]> = T[number]
+// type MyTupleToUnion<T extends readonly any[]> = T[number]
 
 type Arr = ['1', '2', '3']
 
